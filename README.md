@@ -1,6 +1,6 @@
 # Mini Projects
 
-This repo contains a of collection of small Python scripts.
+This repo contains a collection of small Python scripts.
 
 
 ## Counting Words
