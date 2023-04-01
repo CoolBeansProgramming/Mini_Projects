@@ -1,4 +1,4 @@
-
+from datetime import datetime 
 
 def monthly_interest_earned():
     """
@@ -11,19 +11,16 @@ def update_balance():
     Updates the balance when interest is added and additional deposits are made. 
     """
 
-def savings_goal():
+def savings_goal(target_date, goal_amount, initial_amount=0):
     """
-    Outputs a time line of how much needs to be saved monthly to reach a savings goal. 
+    Outputs a timeline of how much needs to be saved monthly to reach a savings goal. 
     """
     pass
 
-def compound_interest(principal: float, interest_rate: float, rate_freq: float, years: float, payments: float):
+def compound_interest(principal: float, interest_rate: float, rate_freq: float, years: float, payments=0):
     """
-    Calculates compound interest when only an initial deposit is made and returns the balance.
-    https://www.wikihow.com/Calculate-Bank-Interest-on-Savings
-    https://www.nerdwallet.com/article/banking/savings-calculator
-    https://github.com/tuomaskivioja/5-super-quick-automation-ideas/blob/main/wealth_calculator.py
-    
+    Calculates compound interest either when only an initial is made or when reoccurring deposits are made 
+    and returns the balance after a specified number of years.
     """
     interest_compound = (interest_rate/100)/rate_freq
     
@@ -51,4 +48,5 @@ def main():
 
 
 
-main()
+if __name__ == "__main__":
+    main()
